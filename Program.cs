@@ -43,10 +43,8 @@ namespace TelegramBot
             }
 
             if (message.Text == "Відео годік🥳")
-            {
-                await client.SendTextMessageAsync(chatId, "Почекай трішки");
-                
-                await client.SendVideoAsync(chatId, "./resources/corporativ.mp4", thumb: "https://raw.githubusercontent.com/Artem3003/TelegramBot/main/resources/corporativ.jpg");
+            {                
+                await client.SendTextMessageAsync(chatId, "https://youtu.be/aBw7OvPcsB0");
 
                 await client.SendTextMessageAsync(chatId, "Гарного перегляду)))😆");  
                 return;
